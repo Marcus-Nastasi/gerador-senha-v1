@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo Atividades</title>
+</head>
+<body>
+  <main class="container">
+    <section id="heading">
+        <h1>Gerador de Senhas</h1>
+        <p id="campo-senha-gerada">Nada selecionado</p>
+    </section>
+    <section id="form">
+        <form action="#" method="get">
+            <label for="qnt-caracteres">Quantidade de caracteres:</label>
+                <input type="number" name="qnt-caracteres" id="qnt-caracteres" min="10" max="50" value="10" required>
+            <label for="add-num">Adicionar numeros:</label>
+                <input type="checkbox" name="add-num" id="add-num" class="check">
+            <label for="let-maisc">Letras maiusculas:</label>
+                <input type="checkbox" name="let-maisc" id="let-maisc" class="check" checked>
+            <label for="let-min">Letras minusculas:</label>
+                <input type="checkbox" name="let-min" id="let-min" class="check" checked>
+            <label for="simbol">Simbolos:</label>
+                <input type="checkbox" name="simbol" id="simbol" class="check">
+            <button type="submit" id="btn-gera">Gerar</button>
+        </form>
+    </section>
+  </main>
+
+  <script src="./bundle.js"></script>
+</body>
+</html>

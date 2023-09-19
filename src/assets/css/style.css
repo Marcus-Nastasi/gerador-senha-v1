@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(101, 53, 6, 0.674);
+}
+
+.container {
+    background-color: #cccccc;
+    max-width: 640px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+#heading h1 {
+    font-size: 35px;
+    margin-bottom: -5px;
+}
+
+#heading p {
+    font-family: cursive;
+    font-size: 30px;
+    color: rgb(61, 135, 67);
+}
+
+
+#form {
+    display: flex;
+    justify-content: center;
+}
+
+#form label {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#form input {
+    margin: 17px;
+    height: 1.6rem;
+}
+
+#form input.check {
+    height: 1.1rem;
+}
+
+#form input[type='checkbox'] {
+    color: orange;
+}
+
+
+form button {
+    height: 2.4rem;
+    width: 10rem;
+    margin-top: 10px;
+    align-self: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: rgba(67, 60, 51, 0.321);
+    border: 0.1px solid #000000;
+    border-radius: 3px;
+}
+
+form button:hover {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.625);
+}
