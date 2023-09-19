@@ -9,8 +9,6 @@ const chkNum = document.getElementById('add-num');
 const chkSimbol = document.getElementById('simbol');
 const btnGeraSenha = document.getElementById('btn-gera');
 
-
-
 export default () => {
     btnGeraSenha.addEventListener('click', (e) => {
         e.preventDefault();
