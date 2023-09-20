@@ -7,7 +7,7 @@ const criaSimbolo = () => {
     return simbolos[Math.round(Math.random() * (simbolos.length))];
 };
 
-export default function geraSenha(qtd, mai, min, num, simbol) {
+export default function geraSenha(qtd, mai, min, num, sbl) {
     // flags
     let senhaArray = [];
     qtd = Number(qtd);
@@ -16,7 +16,7 @@ export default function geraSenha(qtd, mai, min, num, simbol) {
         mai && senhaArray.push(criaMaiuscula());
         min && senhaArray.push(criaMinuscula());
         num && senhaArray.push(criaNumero());
-        simbol && senhaArray.push(criaSimbolo());
+        sbl && senhaArray.push(criaSimbolo());
     }
 
     senhaArray = senhaArray.join('').slice(0, qtd);
